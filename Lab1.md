@@ -1,4 +1,4 @@
-# Lab 1: Personal Investment Dashboard — Initial Product
+# Lab 1: Personal Investment Dashboard - Initial Product
 
 Client request: *"Help me follow my investments."*
 
@@ -11,13 +11,13 @@ Client request: *"Help me follow my investments."*
 | Product | Likely User and goal | Reusable pattern |
 | ------- | -------------------- | ---------------- |
 | Google Finance (market data) | An individual investor who wants a free, simple view of what their stocks and ETFs are worth and which securities they follow | (a) The User records a holding manually as symbol, number of shares, purchase date, and purchase price. (b) A portfolio (owned holdings with value and gain/loss) is kept separate from a watchlist (followed symbols with no ownership). |
-| Robinhood (trading) | A retail investor who buys and sells stocks and ETFs and wants to see how each position is performing | (a) Each held position shows total return and its share of the portfolio. (b) Holdings and watched assets are treated differently, for example in price-movement notifications. |
+| Robinhood (trading) | A retail investor who buys and sells stocks and ETFs and wants to see how each position is performing | (a) Each held position shows total return and its share of the portfolio. (b) Holdings and watched assets are treated differently, e.g. in price-movement notifications. |
 
 ### Evidence
 
 - Google Finance lets the User add a stock by symbol together with share count, purchase date, and purchase price, and then shows portfolio performance and a separate watchlist. Source: [The Motley Fool, "How to Track Stocks With Google Finance"](https://www.fool.com/investing/how-to-invest/stocks/how-to-track-stocks-with-google-finance/)
 - Google's own page describes tracking all investments, real-time pricing updates, and overall portfolio worth. It also states that the data is not financial advice. Source: [Google Finance, Portfolio & Watchlist](https://www.google.com/finance/portfolio/watchlist)
-- A third-party guide states that Google Finance has no brokerage connections, so every position must be entered and updated by hand after each trade. **This is recorded as an assumption, because it is not Google's own statement.** Source: [Portfolio Genius guide](https://portfoliogenius.ai/blog/google-finance-portfolio-watchlist)
+  
 - For an open position, Robinhood shows returns, equity, and portfolio diversity, including total return since the position was opened. Source: [Robinhood Support, "Viewing stock details"](https://robinhood.com/us/en/support/articles/viewing-stock-detail-pages/)
 - Robinhood offers price-movement alerts for held and watched assets. Watchlist alerts are off by default. Source: [Robinhood Support, "Price alerts"](https://www.robinhood.com/us/en/support/articles/price-alerts/)
 - Robinhood's core offer is trading stocks, ETFs, options, and crypto, plus paid features and prediction markets. Source: [Robinhood App Store listing](https://apps.apple.com/us/app/robinhood-investing-for-all/id938003185)
