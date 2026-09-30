@@ -107,9 +107,9 @@ Market-data symbol lists call anything with a ticker a "stock" (preferred shares
 | Stock | "A type of security that gives stockholders a share of ownership in a company"; common stock carries voting rights, preferred stock usually does not. | [Investor.gov (SEC), "Stocks"](https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks) |
 | ETF | An exchange-traded investment product whose shares are bought and sold "on national securities exchanges at market prices." | [Investor.gov (SEC), "ETF"](https://www.investor.gov/introduction-investing/investing-basics/glossary/exchange-traded-fund-etf) |
 
-> **Screenshot placeholder:** Investor.gov "Stocks" page (`assets/investor-gov-stocks.png`).
+<img width="706" height="339" alt="SCR-20260930-labj" src="https://github.com/user-attachments/assets/529d08a7-ffc5-4ed9-96e9-5f80ff3df5e7" />
+<img width="723" height="141" alt="SCR-20260930-lafz" src="https://github.com/user-attachments/assets/7868ac3a-7b5b-42be-9bc7-f32f544320cc" />
 
-> **Screenshot placeholder:** Investor.gov "ETF" glossary entry (`assets/investor-gov-etf.png`).
 
 **Product decision:** in this Dashboard, a **Stock is a US-listed common stock or ETF, priced in USD**.
 
@@ -131,7 +131,9 @@ Source: Nasdaq Trader symbol directory, [`nasdaqlisted.txt`](https://www.nasdaqt
 | Ambiguous names (upper bound) | 159 |
 | **Supported Stocks** | **11,152** |
 
-> **Screenshot placeholder:** the two symbol files open in the browser, showing the header and "File Creation Time" (`assets/nasdaq-symbol-directory.png`).
+<img width="870" height="163" alt="SCR-20260930-lbdo" src="https://github.com/user-attachments/assets/6647965f-14ba-4781-9771-02a453c1613c" />
+<img width="744" height="148" alt="SCR-20260930-lbfl" src="https://github.com/user-attachments/assets/bded7f2b-edd6-493b-968c-d8c9f0fae523" />
+
 
 ### Synchronized data
 
