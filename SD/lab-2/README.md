@@ -92,7 +92,7 @@ The steady Overview and Watchlist traffic is already in the steady total and is 
 | Additional Watchlist refresh flow | 5.4 | 54 | 540 |
 | **Market-open subtotal** | **93.6** | **936** | **9,360** |
 | 10% capacity margin | 9.36 | 93.6 | 936 |
-| **Rounded-up market-open target** | 102.96 -> **103 RPS** | 1,029.6 -> **1,030 RPS** | **10,296 RPS** |
+| **Rounded-up market-open target** | 102.96 -> **103 RPS** | 1,029.6 -> **1,030 RPS** | 10,296 -> **10,296 RPS** |
 
 ---
 
@@ -164,7 +164,7 @@ Stock reference sample (average name length measured on the symbol files: 38.4 c
 | Record | Bytes |
 | ------ | ----- |
 | Stock reference | id 8 + symbol 8 + FIGI 12 + name 40 + exchange/type/status 3 + sector 16 + industry 28 + shares 8 + dates 8 + updated 8 = **139** |
-| Latest price | id, last price, previous close, volume, provider time, received time 6 x 8 + state 1 = **49** |
+| Latest price | id, last price, previous close, volume, provider time, received time (6 x 8) + state 1 = **49** |
 | Price bar (daily or 5-min) | id 8 + time 8 + open/high/low/close 32 + volume 8 + interval 1 = **57** |
 | Corporate action | id 8 + type 1 + ex-date 4 + values 16 + recorded 8 = **37** |
 | Calendar day | date 4 + status 1 + open 4 + close 4 + exchange 1 = **14** |
@@ -213,7 +213,7 @@ Raw data only, without indexes, replicas, or backups. The held size stays flat b
 | Throughput | Market-open burst | 7,920 -> 10,296 RPS (+30%) within 10 s | Reads queue and time out at the peak | Acceptable reads/s and timeouts in a 10 s step test |
 | Availability | Single Market Data Provider | One provider in System Context; 8 min 11 s budget | A long provider outage uses the whole monthly budget | Provider incident history and SLA; sync gap durations |
 
-**Latency:** (1) 20% of Users poll the Stock price every second. (2) Slow reads push p95 past 1 s, and shared load pushes other reads past 2 s. (3) It is 75.8% of steady traffic, yet the price changes only once per minute. (4) Load test at 6,000 RPS; reject if p95 stays under 1 s.
+**Latency:** (1) 20% of Users poll the Stock price every second. (2) Slow reads push p95 past 1 s, and shared load pushes other reads past 2 s. (3) The Stock price read is 75.8% of steady traffic, yet the price changes only once per minute. (4) Load test at 6,000 RPS; reject if p95 stays under 1 s.
 
 **Consistency:** (1) The sync path from the provider into latest prices. (2) Only 5 min of slack remain, so a few failed syncs make prices "unavailable," and using received time instead of provider time would show stale prices as current. (3) 15 min delay vs 20 min limit. (4) Log price age per read; reject if no read over 20 min is labeled current.
 
