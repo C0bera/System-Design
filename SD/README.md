@@ -10,3 +10,4 @@
 | [Lab 2](./lab-2/README.md) | Quantify the Dashboard reads |
 | [Lab 3](./lab-3/README.md) | Draw the Dashboard boundary |
 | [Lab 4](./lab-4/README.md) | Scale the Dashboard read path |
+| [Lab 5](./lab-5/README.md) | Model the Dashboard and define its API |

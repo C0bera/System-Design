@@ -1,0 +1,13 @@
+[project]
+name = "dashboard-api"
+version = "1.0.0"
+description = "Personal Investment Dashboard API v1 (Lab 5): stub handlers, source of the OpenAPI document"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "pyyaml>=6.0",
+]
+
+[tool.uv]
+package = false
